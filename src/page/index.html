@@ -12,80 +12,90 @@
     <!-- INSERT ICON HERE -->
 
     <!-- IMPORT CSS/CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
   </head>
   <!-- BODY -->
   <body>
     <!-- NAVBAR -->
     <nav
-      class="navbar navbar-expand-md navbar-dark bg-dark fixed-top d-flex"
+      class="navbar navbar-expand-md bg-dark navbar-dark sticky-top shadow-lg"
+      id="scrollSpy"
     >
-      <div class="container-fluid">
-        <a href="#" class="navbar-brand mx-5">RITZ</a>
+      <div class="container">
+        <a class="navbar-brand" href="#top"
+          ><span class="align-bottom">Ritz</span>
+        </a>
+
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#hamburgerMenu"
-          aria-controls="hamburgerMenu"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
           aria-expanded="false"
-          aria-label="Toggle Menu"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div
           class="collapse navbar-collapse justify-content-end"
-          id="hamburgerMenu"
+          id="navbarCollapse"
         >
-          <ul class="navbar-nav align-items-end me-1">
+          <ul class="navbar-nav nav-pills ">
             <li class="nav-item">
-              <a href="#about" class="nav-link active">ABOUT</a>
+              <a class="nav-link active" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a href="#services" class="nav-link">SERVICES</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a href="#projects" class="nav-link">PROJECTS</a>
+              <a class="nav-link" href="#roadmap">Roadmap</a>
             </li>
             <li class="nav-item">
-              <a href="#roadmap" class="nav-link">ROADMAP</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contacts" class="nav-link">CONTACTS</a>
+              <a class="nav-link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- HERO -->
-    <div class="bg-dark text-light vh-100">HERO</div>
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#scrollSpy"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example"
+      tabindex="0"
+    >
+      <!-- HERO -->
+      <div class="bg-dark text-light vh-100" id="#">HERO</div>
 
-    <!-- ABOUT -->
-    <main class="bg-light vh-100" id="about">ABOUT</main>
+      <!-- ABOUT -->
+      <main class="bg-light vh-100" id="about">ABOUT</main>
 
-    <!-- SERVICES -->
-    <section class="bg-dark text-light vh-100" id="services">SERVICES</section>
+      <!-- SERVICES -->
+      <section class="bg-dark text-light vh-100" id="services">
+        SERVICES
+      </section>
 
-    <!-- PROJECTS -->
-    <section class="bg-light vh-100" id="projects">PROJECTS</section>
+      <!-- PROJECTS -->
+      <section class="bg-light vh-100" id="projects">PROJECTS</section>
 
-    <!-- ROADMAP -->
-    <section class="bg-dark text-light vh-100" id="roadmap">ROADMAP</section>
+      <!-- ROADMAP -->
+      <section class="bg-dark text-light vh-100" id="roadmap">ROADMAP</section>
 
-    <section class="bg-light vh-100" id="contacts">CONTACTS</section>
+      <section class="bg-light vh-100" id="contacts">CONTACTS</section>
+    </div>
 
     <!-- IMPORT SCRIPT/CDN -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="../script/script.js" defer></script>
   </body>
 </html>
