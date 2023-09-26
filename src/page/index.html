@@ -24,7 +24,7 @@
   <body>
     <!-- NAVBAR -->
     <nav
-      class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top d-flex"
+      class="navbar navbar-expand-md navbar-dark bg-dark fixed-top d-flex"
     >
       <div class="container-fluid">
         <a href="#" class="navbar-brand mx-5">RITZ</a>
@@ -45,35 +45,19 @@
         >
           <ul class="navbar-nav align-items-end me-1">
             <li class="nav-item">
-              <a href="" class="nav-link active" href="#about">ABOUT</a>
-            </li>
-            <li class="nav-item dropdown" aria-labelledby="navbarDropdown">
-              <a
-                href="#"
-                class="nav-link dropdown-toggle"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >SERVICES</a
-              >
-              <ul
-                class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
-                aria-labelledby="navbarDropdown"
-              >
-                <li><a href="#" class="dropdown-item">WEB DESIGN</a></li>
-                <li><a href="#" class="dropdown-item">WEB DEVELOPMENT</a></li>
-                <li><a href="#" class="dropdown-item">ETHICAL HACKING</a></li>
-              </ul>
+              <a href="#about" class="nav-link active">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link" href="#projects">PROJECTS</a>
+              <a href="#services" class="nav-link">SERVICES</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link">ROADMAP</a>
+              <a href="#projects" class="nav-link">PROJECTS</a>
             </li>
             <li class="nav-item">
-              <a href="" class="nav-link" href="#contact">CONTACTS</a>
+              <a href="#roadmap" class="nav-link">ROADMAP</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">CONTACTS</a>
             </li>
           </ul>
         </div>
@@ -81,22 +65,21 @@
     </nav>
 
     <!-- HERO -->
-    <div class="bg-dark vh-100"></div>
+    <div class="bg-dark text-light vh-100">HERO</div>
 
     <!-- ABOUT -->
-    <main id="about"></main>
+    <main class="bg-light vh-100" id="about">ABOUT</main>
 
     <!-- SERVICES -->
-    <section></section>
+    <section class="bg-dark text-light vh-100" id="services">SERVICES</section>
 
     <!-- PROJECTS -->
-    <section></section>
+    <section class="bg-light vh-100" id="projects">PROJECTS</section>
 
     <!-- ROADMAP -->
-    <section></section>
+    <section class="bg-dark text-light vh-100" id="roadmap">ROADMAP</section>
 
-    CONTACTS
-    <section></section>
+    <section class="bg-light vh-100" id="contacts">CONTACTS</section>
 
     <!-- IMPORT SCRIPT/CDN -->
     <script
