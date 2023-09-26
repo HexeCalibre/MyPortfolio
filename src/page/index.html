@@ -12,14 +12,19 @@
     <!-- INSERT ICON HERE -->
 
     <!-- IMPORT CSS/CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <!-- BODY -->
-  <body>
+  <body class="bg-dark text-light">
     <!-- NAVBAR -->
     <nav
-      class="navbar navbar-expand-md bg-dark navbar-dark sticky-top shadow-lg"
+      class="navbar navbar-expand-md bg-dark navbar-dark sticky-top"
       id="scrollSpy"
     >
       <div class="container">
@@ -43,21 +48,20 @@
           class="collapse navbar-collapse justify-content-end"
           id="navbarCollapse"
         >
-          <ul class="navbar-nav nav-pills ">
-            <li class="nav-item">
+          <ul class="navbar-nav nav-pills">
+            <li class="nav-item px-3">
               <a class="nav-link active" href="#about">About</a>
             </li>
-
-            <li class="nav-item">
+            <li class="nav-item px-3">
               <a class="nav-link" href="#services">Services</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-3">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-3">
               <a class="nav-link" href="#roadmap">Roadmap</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item px-3">
               <a class="nav-link" href="#contacts">Contacts</a>
             </li>
           </ul>
@@ -70,32 +74,34 @@
       data-bs-target="#scrollSpy"
       data-bs-root-margin="0px 0px -40%"
       data-bs-smooth-scroll="true"
-      class="scrollspy-example"
       tabindex="0"
     >
       <!-- HERO -->
-      <div class="bg-dark text-light vh-100" id="#">HERO</div>
+      <div class="vh-100" id="#">HERO</div>
 
       <!-- ABOUT -->
-      <main class="bg-light vh-100" id="about">ABOUT</main>
+      <main class="vh-100" id="about">ABOUT</main>
 
       <!-- SERVICES -->
-      <section class="bg-dark text-light vh-100" id="services">
-        SERVICES
-      </section>
+      <section class="vh-100" id="services">SERVICES</section>
 
       <!-- PROJECTS -->
-      <section class="bg-light vh-100" id="projects">PROJECTS</section>
+      <section class="vh-100" id="projects">PROJECTS</section>
 
       <!-- ROADMAP -->
-      <section class="bg-dark text-light vh-100" id="roadmap">ROADMAP</section>
+      <section class="vh-100" id="roadmap">ROADMAP</section>
 
-      <section class="bg-light vh-100" id="contacts">CONTACTS</section>
+      <!-- CONTACTS -->
+      <section class="vh-100" id="contacts">CONTACTS</section>
     </div>
 
     <!-- IMPORT SCRIPT/CDN -->
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
     <script src="../script/script.js" defer></script>
   </body>
 </html>
